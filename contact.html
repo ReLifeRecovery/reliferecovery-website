@@ -15,13 +15,16 @@
       <img src="images/logo-emblem.png" alt="ReLife Recovery and Wellness logo" class="brand-logo">
       <span class="brand-text">ReLife Recovery<span>&amp; Wellness</span></span>
     </a>
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="book-now.html">Book Now</a>
       <a href="policies.html">Policies</a>
       <a href="contact.html">Contact</a>
       <a href="index.html#membership" class="nav-cta">Become a Member</a>
     </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -119,6 +122,23 @@
     </div>
   </div>
 </footer>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function () {
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
