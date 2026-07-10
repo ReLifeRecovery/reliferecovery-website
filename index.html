@@ -251,6 +251,16 @@
       });
     });
   }
+
+  // If the page loaded with a #membership hash (or any other),
+  // let the browser finish its initial scroll-to-anchor, then remove
+  // the hash from the URL so mobile browsers don't keep re-snapping
+  // back to that section every time the address bar shows/hides.
+  if (window.location.hash) {
+    setTimeout(function () {
+      history.replaceState(null, '', window.location.pathname);
+    }, 600);
+  }
 </script>
 
 </body>
