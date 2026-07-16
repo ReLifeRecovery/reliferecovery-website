@@ -631,9 +631,22 @@ footer {
   background: var(--sand);
   border: 1px solid var(--gold);
   border-radius: 8px;
-  padding: 48px 44px;
-  max-width: 640px;
+  padding: 44px 38px;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 920px;
   margin: 0 auto 56px;
+}
+
+.guest-note {
+  font-size: 13px;
+  color: #8A968F;
+  margin-top: -16px;
+  margin-bottom: 22px;
 }
 
 .membership-feature .badge {
@@ -740,6 +753,7 @@ footer {
   .ritual-grid { grid-template-columns: 1fr; }
   .price-grid { grid-template-columns: 1fr 1fr; }
   .footer-top { grid-template-columns: 1fr; }
+  .membership-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
