@@ -763,6 +763,42 @@ footer {
   .membership-feature { padding: 36px 26px; }
 }
 
+/* ---------- Breadcrumb (service pages) ---------- */
+.breadcrumb {
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb a { color: rgba(255,255,255,0.75); transition: color 0.2s ease; }
+.breadcrumb a:hover { color: var(--gold-soft); }
+.breadcrumb .sep { color: rgba(255,255,255,0.35); }
+.breadcrumb .current { color: var(--gold-soft); }
+
+/* ---------- FAQ (service pages) ---------- */
+.faq-list { max-width: 760px; }
+
+.faq-item {
+  border-bottom: 1px solid var(--sand-line);
+  padding: 22px 0;
+}
+
+.faq-item:first-child { padding-top: 0; }
+.faq-item:last-child { border-bottom: none; }
+
+.faq-item h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--teal-deep);
+  margin-bottom: 8px;
+}
+
+.faq-item p { font-size: 15px; color: #4A5854; line-height: 1.6; }
+
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
