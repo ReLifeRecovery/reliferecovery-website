@@ -261,6 +261,9 @@ section.tight { padding: 72px 0; }
   padding: 0;
   position: relative;
   overflow: hidden;
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .ritual-photo {
