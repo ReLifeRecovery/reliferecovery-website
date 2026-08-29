@@ -189,6 +189,17 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
 }
 
+.hero-hours {
+  margin-top: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+}
+
+.hero-hours svg { width: 16px; height: 16px; stroke: var(--gold-soft); flex-shrink: 0; }
+
 .btn {
   display: inline-flex;
   align-items: center;
