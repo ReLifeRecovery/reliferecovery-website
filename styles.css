@@ -128,6 +128,23 @@ a { color: inherit; text-decoration: none; }
 
 .nav-cta:hover { background: var(--gold-soft); }
 
+.nav-cta-outline {
+  border: 1.5px solid var(--gold);
+  color: var(--gold) !important;
+  padding: 8.5px 20.5px;
+  border-radius: 3px;
+  font-weight: 600 !important;
+  font-size: 13.5px !important;
+  letter-spacing: 0.03em;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.nav-cta-outline:hover { background: var(--gold); color: var(--teal-deep) !important; }
+
+.footer-col .nav-cta-outline {
+  display: inline-block;
+  margin-top: 6px;
+}
+
 .nav-toggle { display: none; }
 
 /* ---------- Hero ---------- */
